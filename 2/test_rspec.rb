@@ -7,7 +7,7 @@ RSpec.describe "test 2" do
   end
 
   it "应缴税所得额是 3000" do
-    expect(run(3000)).to eq(295)
+    expect(run(3000)).to eq(195)
   end
 
   it "应缴税所得额是 5000" do

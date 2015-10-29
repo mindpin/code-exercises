@@ -13,14 +13,14 @@ RSpec.describe "test 5" do
     expect(run(arg2, arg1)).to eq("参数不正确")
   end
 
-  it "剪刀 打败了 纸" do
+  it "剪刀 打败了 布" do
     arg1 = "剪刀"
-    arg2 = "纸"
+    arg2 = "布"
     test_5(arg1, arg2)
   end
 
-  it "纸 打败了 石头" do
-    arg1 = "纸"
+  it "布 打败了 石头" do
+    arg1 = "布"
     arg2 = "石头"
     test_5(arg1, arg2)
   end
@@ -61,8 +61,8 @@ RSpec.describe "test 5" do
     test_5(arg1, arg2)
   end
 
-  it "纸 打败了 史波克" do
-    arg1 = "纸"
+  it "布 打败了 史波克" do
+    arg1 = "布"
     arg2 = "史波克"
     test_5(arg1, arg2)
   end
