@@ -1,8 +1,6 @@
 def run(time)
   # TODO 
   time_interval = Time.now - time
-  p Time.now
-  p time_interval
   if time_interval < 0 
     return "未来"
   end
@@ -24,10 +22,10 @@ def run(time)
   end
 
   if time_interval >= 604800 && time_interval < 31536000
-    return "#{(time_interval / 604800).to_i} 周 #{(time_interval / 86400).to_i} 天前"
+    return "#{(time_interval / 604800).to_i} 周 #{((time_interval / 86400 )/7).to_i} 天前"
   end
-
+  
   if time_interval >= 31536000
-    return "#{(time_interval / 31536000).to_i} 年 #{(time_interval / 86400).to_i} 天前"
+    return "#{(time_interval / 31536000).to_i} 年 #{(time_interval / 86400 - 365).to_i} 天前"
   end
 end
