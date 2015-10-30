@@ -22,7 +22,7 @@ RSpec.describe "test 1" do
   end
 
   it "如果参数时间在当前时间之前并距当前时间间隔大于 1 周且小于 1 年，则返回“x 周 y 天前”（x 是具体周数，y 是具体天数。）" do
-    expect(run(Time.now - 60 * 60 * 24 * 25 - 10)).to eq("3 周 3 天前")
+    expect(run(Time.now - 60 * 60 * 24 * 25 - 10)).to eq("3 周 4 天前")
   end
 
   it "如果参数时间在当前时间之前并距当前时间间隔大于 1 年，则返回“x 年 y 天前”" do
